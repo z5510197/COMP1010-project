@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h1 {
+  text-align: center;
+  background-color:white;
+  margin-top: 0px;
+  text-decoration: none;
+  box-shadow: -2px 3px 2px 3px lightgray;
+  height: 70px;
+  vertical-align:middle;
+  padding:5px;
+  width: 100%;
+}
+
+body{
+  font-family: "Roboto", "sans-serif";
+  text-decoration: none;
+}
+
+
+/*header nav*/
+table {
+    width: 100%;
+    background-color:#FFDC24;
+    text-decoration: none;
+    height: 60px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*each stock*/
+.button{
+  background-color: lightgray;
+  border: 1px solid none;
+  text-align: left;
+  text-decoration: none;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width:95%;
+  margin: 3px;
+  box-shadow: -2px 3px 2px 3px darkgray;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+
+
+
+
+
+
+/*div for all 3 buttons*/
+.trade{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+}
+
+/*div for input and stock info*/
+.stock{
+  text-align:center;
+  position: relative;
+}
+
+/*remove the radio button*/
+input[type="radio"]{
+  display: none;
+}
+
+
+
+
+
+
+/*class for both buy and sell button*/
+.trade_buttons {
+  position: relative;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px 50px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+
+/*buy and sell button*/
+#buy_button{
+  color:#50C878;
+  border: 2px solid #50C878;
+}
+
+#sell_button{
+  color:#E55451;
+  border: 2px solid #E55451;
+}
+
+
+/*buy and sell buttons when selected*/
+input[type="radio"]:checked + #sell_button{
+  background-color: #E55451;
+  color:white;
+}
+
+input[type="radio"]:checked + #buy_button{
+  background-color: #50C878;
+  color:white;
+}
+
+
+
+/*submit button*/
+#submit{
+  position:relative;
+  padding: 10px 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  color: white;
+}
+
+
+
+/*submit button color based on selected radio button */
+input[type="radio"]#buy:checked ~ #submit {
+  background-color: #50C878;
+  border: 2px solid #50C878;
+}
+
+input[type="radio"]#sell:checked ~ #submit {
+  background-color: #E55451;
+  border: 2px solid #E55451;
+}
+
+
+
+#chart-container {
+  position:relative;
+  width: 80%;
+  margin: auto;
+}
